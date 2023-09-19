@@ -63,7 +63,7 @@ test.describe("preferencias.html", () => {
   test('O primeiro parágrafo deve ter o texto como solicitado', async ({ page }) => {
     await page.goto(`file://${process.cwd()}/preferencias.html`);
     const p = page.locator("main > h1+p");
-    await expect(p).toHaveText("Esta é a página sobre minha preferência sobre os personagens. Temos também a página sobre personagens e a página principal.");
+    await expect(p).toHaveText("Esta é a página sobre minhas preferências entre os personagens. Temos também a página sobre personagens e a página principal.");
   });
 
 
